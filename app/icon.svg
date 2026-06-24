@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64">
+  <!-- Pillar / stand -->
+  <rect x="29" y="20" width="6" height="30" rx="1" fill="#1D4ED8"/>
+  <!-- Base -->
+  <rect x="18" y="50" width="28" height="5" rx="2" fill="#1D4ED8"/>
+  <!-- Top bar -->
+  <rect x="8" y="14" width="48" height="5" rx="2" fill="#1D4ED8"/>
+  <!-- Left chain -->
+  <line x1="16" y1="19" x2="16" y2="30" stroke="#1D4ED8" stroke-width="2.5"/>
+  <!-- Right chain -->
+  <line x1="48" y1="19" x2="48" y2="30" stroke="#1D4ED8" stroke-width="2.5"/>
+  <!-- Left pan -->
+  <path d="M6 30 Q16 42 26 30 Z" fill="#1D4ED8" opacity="0.85"/>
+  <!-- Right pan -->
+  <path d="M38 30 Q48 42 58 30 Z" fill="#1D4ED8" opacity="0.85"/>
+  <!-- Top finial -->
+  <circle cx="32" cy="11" r="4" fill="#1D4ED8"/>
+</svg>
