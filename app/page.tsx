@@ -12,7 +12,7 @@ const featuredServices = [
     icon: "🏛️",
     title: "Court Taxations",
     description:
-      "Representation at taxation proceedings before the Taxing Master in the High Court and Magistrates' Court.",
+      "Representation at taxation proceedings before the Taxing Master in the High Court.",
   },
   {
     icon: "🤝",
@@ -65,7 +65,7 @@ export default function Home() {
         <div className="mt-20 border-t border-[#E0E0E0] pt-10 grid grid-cols-1 sm:grid-cols-3 gap-8">
           {[
             { stat: "10 Years", label: "of Practice" },
-            { stat: "High Court", label: "& Magistrates' Court" },
+            { stat: "High Court", label: "Taxing Master" },
             { stat: "Party & Party", label: "Attorney & Client · Own Client" },
           ].map(({ stat, label }) => (
             <div key={stat} className="flex flex-col gap-1">

@@ -18,7 +18,7 @@ const playfair = Playfair_Display({
 export const metadata: Metadata = {
   title: "M Berglund Inc. | Cost Consultant & Taxation Specialist",
   description:
-    "Specialist cost consultant & taxation attorneys in the greater Pretoria area. Drafting and opposing bills of costs, taxations in High Court & Magistrates' Court.",
+    "Specialist cost consultant & taxation attorneys in the greater Pretoria area. Drafting and opposing bills of costs, High Court taxations.",
 };
 
 export default function RootLayout({

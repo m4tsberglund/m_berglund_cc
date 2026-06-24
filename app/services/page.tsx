@@ -6,7 +6,7 @@ import SectionHeader from "@/components/SectionHeader";
 export const metadata: Metadata = {
   title: "Services | M Berglund Inc.",
   description:
-    "Full-service legal cost consulting: drafting and opposing bills of costs, High Court and Magistrates' Court taxations, fee assessments, and cost recovery.",
+    "Full-service legal cost consulting: drafting and opposing bills of costs, High Court taxations, fee assessments, and cost recovery.",
 };
 
 const services = [
@@ -30,13 +30,6 @@ const services = [
     description:
       "We represent attorneys and their clients at formal taxation proceedings before the Taxing Master in the High Court. We attend all taxation hearings, present argument on disputed items, and ensure the bill is taxed to its proper value.",
     tags: ["High Court", "Taxing Master"],
-  },
-  {
-    icon: "⚖️",
-    title: "Magistrates' Court Taxations",
-    description:
-      "We handle taxation proceedings in the Magistrates' Court with the same rigour applied in the High Court. Our familiarity with the Magistrates' Court tariff ensures all allowable costs are claimed and defended appropriately.",
-    tags: ["Magistrates' Court", "Tariff A & B"],
   },
   {
     icon: "📊",
@@ -113,7 +106,7 @@ export default function ServicesPage() {
             </p>
           </div>
           <div className="flex flex-col justify-center gap-3 border-l border-[#E0E0E0] pl-10">
-            {["Pretoria High Court", "Gauteng Division", "Magistrates' Courts, Gauteng"].map((court) => (
+            {["Pretoria High Court", "Gauteng Division"].map((court) => (
               <div key={court} className="flex items-center gap-3">
                 <span className="w-1.5 h-1.5 rounded-full bg-[#1D4ED8] shrink-0" />
                 <span className="text-sm text-[#6B6B6B]">{court}</span>

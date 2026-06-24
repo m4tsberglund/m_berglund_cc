@@ -64,8 +64,7 @@ export default function AboutPage() {
               boutique practice dedicated exclusively to legal cost consulting
               and taxation. With more than ten years of specialist experience,
               Mia has developed an authoritative command of the rules governing
-              bills of costs and taxation proceedings in both the High Court and
-              Magistrates' Court.
+              bills of costs and taxation proceedings in the High Court.
             </p>
             <p>
               Her practice is built on a thorough understanding of the Rules of
@@ -94,25 +93,25 @@ export default function AboutPage() {
             </div>
             <div>
               <p className="text-xs uppercase tracking-wider text-[#6B6B6B] mb-1">Jurisdictions</p>
-              <p className="font-semibold text-[#0A0A0A]">High Court &amp; Magistrates' Court</p>
+              <p className="font-semibold text-[#0A0A0A]">High Court</p>
             </div>
           </div>
         </div>
 
         {/* Right column: photo, mission, address */}
         <div className="flex flex-col gap-8">
-          <div className="border border-[#E0E0E0]">
+          <div className="border border-[#E0E0E0] w-1/2 mx-auto">
             <Image
               src="https://www.attorneys.co.za/ImageUploads/M-Berglund-Inc-Pretoria-Pic1-ab05ec.jpg"
               alt="M Berglund Inc. — Mia Poggenpoel, Cost Consultant"
               width={480}
               height={600}
               className="w-full h-auto"
-              sizes="(max-width: 768px) 100vw, 50vw"
+              sizes="(max-width: 768px) 50vw, 25vw"
             />
           </div>
 
-          <div className="border-l-4 border-[#1D4ED8] bg-[#EFF6FF] p-10 flex flex-col gap-6">
+          <div className="border-l-4 border-[#1D4ED8] bg-[#EFF6FF] p-6 flex flex-col gap-4">
             <p className="text-xs uppercase tracking-[0.2em] text-[#1D4ED8]">
               Our Mission
             </p>
@@ -126,7 +125,7 @@ export default function AboutPage() {
             </blockquote>
           </div>
 
-          <div className="border border-[#E0E0E0] p-8 flex flex-col gap-4">
+          <div className="border border-[#E0E0E0] p-5 flex flex-col gap-3">
             <p className="text-xs uppercase tracking-[0.2em] text-[#6B6B6B]">
               Office Address
             </p>
