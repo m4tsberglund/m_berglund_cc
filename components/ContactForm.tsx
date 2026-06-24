@@ -2,7 +2,8 @@
 
 import { useState, FormEvent } from "react";
 
-const FORMSPREE_ENDPOINT = "https://formspree.io/f/YOUR_FORM_ID";
+const WEB3FORMS_URL = "https://api.web3forms.com/submit";
+const WEB3FORMS_KEY = process.env.NEXT_PUBLIC_WEB3FORMS_KEY ?? "";
 
 export default function ContactForm() {
   const [status, setStatus] = useState<"idle" | "sending" | "success" | "error">("idle");
@@ -13,15 +14,18 @@ export default function ContactForm() {
 
     const form = e.currentTarget;
     const data = new FormData(form);
+    data.append("access_key", WEB3FORMS_KEY);
+    data.append("from_name", "M Berglund Inc. Website");
 
     try {
-      const res = await fetch(FORMSPREE_ENDPOINT, {
+      const res = await fetch(WEB3FORMS_URL, {
         method: "POST",
         body: data,
         headers: { Accept: "application/json" },
       });
 
-      if (res.ok) {
+      const json = await res.json();
+      if (json.success) {
         setStatus("success");
         form.reset();
       } else {
@@ -94,7 +98,6 @@ export default function ContactForm() {
           <option value="Drafting Bill of Costs">Drafting Bill of Costs</option>
           <option value="Opposing Bill of Costs">Opposing Bill of Costs</option>
           <option value="High Court Taxation">High Court Taxation</option>
-          <option value="Magistrates' Court Taxation">Magistrates&apos; Court Taxation</option>
           <option value="Legal Fee Assessment">Legal Fee Assessment</option>
           <option value="Cost Recovery & Negotiations">Cost Recovery &amp; Negotiations</option>
           <option value="General Enquiry">General Enquiry</option>
