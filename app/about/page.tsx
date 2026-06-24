@@ -100,7 +100,7 @@ export default function AboutPage() {
 
         {/* Right column: photo, mission, address */}
         <div className="flex flex-col gap-8">
-          <div className="border border-[#E0E0E0] w-1/2 mx-auto">
+          <div className="w-1/2 mx-auto">
             <Image
               src="https://www.attorneys.co.za/ImageUploads/M-Berglund-Inc-Pretoria-Pic1-ab05ec.jpg"
               alt="M Berglund Inc. — Mia Poggenpoel, Cost Consultant"
